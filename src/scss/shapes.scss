@@ -3,19 +3,19 @@
  * Originally found here: http://css-tricks.com/downloads/
  */
 
-#square {
+%square {
   width: 100px;
   height: 100px;
   background: red;
 }
 
-#rectangle {
+%rectangle {
   width: 200px;
   height: 100px;
   background: red;
 }
 
-#circle {
+%circle {
   width: 100px;
   height: 100px;
   background: red;
@@ -26,7 +26,7 @@
 
 /* Cleaner, but slightly less support: use "50%" as value */
 
-#oval {
+%oval {
   width: 200px;
   height: 100px;
   background: red;
@@ -37,7 +37,7 @@
 
 /* Cleaner, but slightly less support: use "50%" as value */
 
-#triangle-up {
+%triangle-up {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -45,7 +45,7 @@
   border-bottom: 100px solid red;
 }
 
-#triangle-down {
+%triangle-down {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -54,7 +54,7 @@
 }
 
 
-#triangle-left {
+%triangle-left {
   width: 0;
   height: 0;
   border-top: 50px solid transparent;
@@ -62,7 +62,7 @@
   border-bottom: 50px solid transparent;
 }
 
-#triangle-right {
+%triangle-right {
   width: 0;
   height: 0;
   border-top: 50px solid transparent;
@@ -70,14 +70,14 @@
   border-bottom: 50px solid transparent;
 }
 
-#triangle-topleft {
+%triangle-topleft {
   width: 0;
   height: 0;
   border-top: 100px solid red;
   border-right: 100px solid transparent;
 }
 
-#triangle-topright {
+%triangle-topright {
   width: 0;
   height: 0;
   border-top: 100px solid red;
@@ -85,14 +85,14 @@
 
 }
 
-#triangle-bottomleft {
+%triangle-bottomleft {
   width: 0;
   height: 0;
   border-bottom: 100px solid red;
   border-right: 100px solid transparent;
 }
 
-#triangle-bottomright {
+%triangle-bottomright {
   width: 0;
   height: 0;
   border-bottom: 100px solid red;
@@ -100,7 +100,7 @@
 }
 
 
-#curvedarrow {
+%curvedarrow {
   position: relative;
   width: 0;
   height: 0;
@@ -111,7 +111,7 @@
   -ms-transform: rotate(10deg);
   -o-transform: rotate(10deg);
 }
-#curvedarrow:after {
+%curvedarrow:after {
   content: "";
   position: absolute;
   border: 0 solid transparent;
@@ -127,7 +127,7 @@
   -o-transform: rotate(45deg);
 }
 
-#trapezoid {
+%trapezoid {
   border-bottom: 100px solid red;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
@@ -135,7 +135,7 @@
   width: 100px;
 }
 
-#parallelogram {
+%parallelogram {
   width: 150px;
   height: 100px;
   -webkit-transform: skew(20deg);
@@ -144,7 +144,7 @@
   background: red;
 }
 
-#star-five {
+%star-five {
    margin: 50px 0;
    position: relative;
    display: block;
@@ -159,7 +159,7 @@
    -ms-transform:     rotate(35deg);
    -o-transform:      rotate(35deg);
 }
-#star-five:before {
+%star-five:before {
    border-bottom: 80px solid red;
    border-left: 30px solid transparent;
    border-right: 30px solid transparent;
@@ -176,7 +176,7 @@
    -o-transform:      rotate(-35deg);
 
 }
-#star-five:after {
+%star-five:after {
    position: absolute;
    display: block;
    color: red;
@@ -194,14 +194,14 @@
    content: '';
 }
 
-#pentagon {
+%pentagon {
     position: relative;
     width: 54px;
     border-width: 50px 18px 0;
     border-style: solid;
     border-color: red transparent;
 }
-#pentagon:before {
+%pentagon:before {
     content: "";
     position: absolute;
     height: 0;
@@ -213,13 +213,13 @@
     border-color: transparent transparent red;
 }
 
-#hexagon {
+%hexagon {
   width: 100px;
   height: 55px;
   background: red;
   position: relative;
 }
-#hexagon:before {
+%hexagon:before {
   content: "";
   position: absolute;
   top: -25px;
@@ -230,7 +230,7 @@
   border-right: 50px solid transparent;
   border-bottom: 25px solid red;
 }
-#hexagon:after {
+%hexagon:after {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -242,44 +242,44 @@
   border-top: 25px solid red;
 }
 
-#octagon {
+%octagon {
   width: 100px;
   height: 100px;
   background: red;
   position: relative;
 }
 
-#octagon:before {
+%octagon:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   border-bottom: 29px solid red;
-  border-left: 29px solid #eee;
-  border-right: 29px solid #eee;
+  border-left: 29px solid %eee;
+  border-right: 29px solid %eee;
   width: 42px;
   height: 0;
 }
 
-#octagon:after {
+%octagon:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   border-top: 29px solid red;
-  border-left: 29px solid #eee;
-  border-right: 29px solid #eee;
+  border-left: 29px solid %eee;
+  border-right: 29px solid %eee;
   width: 42px;
   height: 0;
 }
 
-#heart {
+%heart {
     position: relative;
     width: 100px;
     height: 90px;
 }
-#heart:before,
-#heart:after {
+%heart:before,
+%heart:after {
     position: absolute;
     content: "";
     left: 50px;
@@ -300,7 +300,7 @@
          -o-transform-origin: 0 100%;
             transform-origin: 0 100%;
 }
-#heart:after {
+%heart:after {
     left: 0;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
@@ -314,14 +314,14 @@
             transform-origin :100% 100%;
 }
 
-#infinity {
+%infinity {
     position: relative;
     width: 212px;
     height: 100px;
 }
 
-#infinity:before,
-#infinity:after {
+%infinity:before,
+%infinity:after {
     content: "";
     position: absolute;
     top: 0;
@@ -338,7 +338,7 @@
             transform: rotate(-45deg);
 }
 
-#infinity:after {
+%infinity:after {
     left: auto;
     right: 0;
     -moz-border-radius: 50px 50px 50px 0;
@@ -351,7 +351,7 @@
 }
 
 
-#diamond {
+%diamond {
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -359,7 +359,7 @@
   position: relative;
   top: -50px;
 }
-#diamond:after {
+%diamond:after {
   content: '';
   position: absolute;
   left: -50px;
@@ -370,7 +370,7 @@
   border-top-color: red;
 }
 
-#diamond-shield {
+%diamond-shield {
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -378,7 +378,7 @@
   position: relative;
   top: -50px;
 }
-#diamond-shield:after {
+%diamond-shield:after {
   content: '';
   position: absolute;
   left: -50px; top: 20px;
@@ -389,7 +389,7 @@
 }
 
 
-#diamond-narrow {
+%diamond-narrow {
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -397,7 +397,7 @@
   position: relative;
   top: -50px;
 }
-#diamond-narrow:after {
+%diamond-narrow:after {
   content: '';
   position: absolute;
   left: -50px; top: 70px;
@@ -407,7 +407,7 @@
   border-top: 70px solid red;
 }
 
-#cut-diamond {
+%cut-diamond {
     border-style: solid;
     border-color: transparent transparent red transparent;
     border-width: 0 25px 25px 25px;
@@ -416,7 +416,7 @@
     position: relative;
     margin: 20px 0 50px 0;
 }
-#cut-diamond:after {
+%cut-diamond:after {
     content: "";
     position: absolute;
     top: 25px;
@@ -428,7 +428,7 @@
     border-width: 70px 50px 0 50px;
 }
 
-#egg {
+%egg {
    display:block;
    width: 126px;
    height: 180px;
@@ -437,7 +437,7 @@
    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 }
 
-#pacman {
+%pacman {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
@@ -450,7 +450,7 @@
   border-bottom-right-radius: 60px;
 }
 
-#talkbubble {
+%talkbubble {
    width: 120px;
    height: 80px;
    background: red;
@@ -459,7 +459,7 @@
    -webkit-border-radius: 10px;
    border-radius:         10px;
 }
-#talkbubble:before {
+%talkbubble:before {
    content:"";
    position: absolute;
    right: 100%;
@@ -472,14 +472,14 @@
 }
 
 
-#burst-12 {
+%burst-12 {
     background: red;
     width: 80px;
     height: 80px;
     position: relative;
     text-align: center;
 }
-#burst-12:before, #burst-12:after {
+%burst-12:before, %burst-12:after {
     content: "";
     position: absolute;
     top: 0;
@@ -488,13 +488,13 @@
     width: 80px;
     background: red;
 }
-#burst-12:before {
+%burst-12:before {
     -webkit-transform: rotate(30deg);
        -moz-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
          -o-transform: rotate(30deg);
 }
-#burst-12:after {
+%burst-12:after {
     -webkit-transform: rotate(60deg);
        -moz-transform: rotate(60deg);
         -ms-transform: rotate(60deg);
@@ -502,7 +502,7 @@
 }
 
 
-#burst-8 {
+%burst-8 {
     background: red;
     width: 80px;
     height: 80px;
@@ -513,7 +513,7 @@
         -ms-transform: rotate(20deg);
          -o-transform: rotate(20eg);
 }
-#burst-8:before {
+%burst-8:before {
     content: "";
     position: absolute;
     top: 0;
@@ -527,10 +527,10 @@
          -o-transform: rotate(135deg);
 }
 
-#yin-yang {
+%yin-yang {
   width: 96px;
   height: 48px;
-  background: #eee;
+  background: %eee;
   border-color: red;
   border-style: solid;
   border-width: 2px 2px 50px 2px;
@@ -538,31 +538,31 @@
   position: relative;
 }
 
-#yin-yang:before {
+%yin-yang:before {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
-  background: #eee;
+  background: %eee;
   border: 18px solid red;
   border-radius: 100%;
   width: 12px;
   height: 12px;
 }
 
-#yin-yang:after {
+%yin-yang:after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   background: red;
-  border: 18px solid #eee;
+  border: 18px solid %eee;
   border-radius:100%;
   width: 12px;
   height: 12px;
 }
 
-#badge-ribbon {
+%badge-ribbon {
  position: relative;
  background: red;
  height: 100px;
@@ -572,8 +572,8 @@
  border-radius:         50px;
 }
 
-#badge-ribbon:before,
-#badge-ribbon:after {
+%badge-ribbon:before,
+%badge-ribbon:after {
   content: '';
   position: absolute;
   border-bottom: 70px solid red;
@@ -587,7 +587,7 @@
   -o-transform:      rotate(-140deg);
 }
 
-#badge-ribbon:after {
+%badge-ribbon:after {
   left: auto;
   right: -10px;
   -webkit-transform: rotate(140deg);
@@ -597,7 +597,7 @@
 }
 
 
-#space-invader{
+%space-invader{
 
   box-shadow:
     0 0 0 1em red,
@@ -639,7 +639,7 @@
     margin: 50px 0 70px 65px;
   }
 
-#tv {
+%tv {
   position: relative;
   width: 200px;
   height: 150px;
@@ -650,7 +650,7 @@
   text-align: center;
   text-indent: .1em;
 }
-#tv:before {
+%tv:before {
   content: '';
   position: absolute;
   top: 10%;
@@ -661,7 +661,7 @@
   border-radius: 5% / 50%;
 }
 
-#chevron {
+%chevron {
   position: relative;
   text-align: center;
   padding: 12px;
@@ -670,7 +670,7 @@
   width: 200px;
 }
 
-#chevron:before {
+%chevron:before {
   content: '';
   position: absolute;
   top: 0;
@@ -684,7 +684,7 @@
   -o-transform: skew(0deg, 6deg);
   transform: skew(0deg, 6deg);
 }
-#chevron:after {
+%chevron:after {
   content: '';
   position: absolute;
   top: 0;
@@ -699,7 +699,7 @@
   transform: skew(0deg, -6deg);
 }​
 
-#magnifying-glass
+%magnifying-glass
 {
  font-size: 10em; /* This controls the size. */
  display: inline-block;
@@ -709,7 +709,7 @@
  position: relative;
  border-radius: 0.35em;
 }
-#magnifying-glass::before
+%magnifying-glass::before
 {
  content: "";
  display: inline-block;
@@ -726,7 +726,7 @@
       -o-transform: rotate(45deg);
 }
 
-#facebook-icon {
+%facebook-icon {
   background: red;
   text-indent: -999em;
   width: 100px;
@@ -737,7 +737,7 @@
   border: 15px solid red;
   border-bottom: 0;
 }
-#facebook-icon::before {
+%facebook-icon::before {
   content: "/20";
   position: absolute;
   background: red;
@@ -745,20 +745,20 @@
   height: 90px;
   bottom: -30px;
   right: -37px;
-  border: 20px solid #eee;
+  border: 20px solid %eee;
   border-radius: 25px;
 }
-#facebook-icon::after {
+%facebook-icon::after {
   content: "/20";
   position: absolute;
   width: 55px;
   top: 50px;
   height: 20px;
-  background: #eee;
+  background: %eee;
   right: 5px;
 }
 
-#cone {
+%cone {
   width: 0;
   height: 0;
   border-left: 70px solid transparent;
@@ -769,14 +769,14 @@
   border-radius: 50%;
 }
 
-#moon {
+%moon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   box-shadow: 15px 15px 0 0 red;
 }
 
-#flag {
+%flag {
   width: 110px;
   height: 56px;
   padding-top: 15px;
@@ -788,14 +788,14 @@
   text-align: center;
   text-transform: uppercase;
 }
-#flag:after {
+%flag:after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 13px solid #eee;
+  border-bottom: 13px solid %eee;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
 }
